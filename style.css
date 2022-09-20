@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Norican';
+    src: url('res/Norican-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titlebar {
+    width: 100%;
+    padding: 0.25em 0.5em;
+    background-color: #4F4F4F;
+    color: #dfdfdf;
+    text-align: center;
+    font-family: 'Norican';
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+}
+
+.titlebar-buttons {
+    -webkit-app-region: no-drag;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0.25em;
+    right: 0.25em;
+}
+
+.titlebar-buttons button {
+  border: none;
+  background-color: #3D3D3D;
+  color: #dfdfdf;
+  height: 1.5em;
+  width: 1.5em;
+  font-size: 1.5em;
+}
+
+.optionbar {
+    width: 100%;
+    padding: 0.5em;
+    background-color: #3D3D3D;
+    color: #dfdfdf;
+}
+
+.example-parent {
+    border: 2px solid #DFA612;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  .example-origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .example-draggable {
+    background-color: #4AAE9B;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .example-dropzone {
+    background-color: #6DB65B;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
